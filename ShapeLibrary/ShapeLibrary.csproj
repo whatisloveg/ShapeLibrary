@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="query.txt" />
+    <Content Include="SQLQuery.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

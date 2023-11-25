@@ -1,0 +1,4 @@
+SELECT P.ProductName, ISNULL(C.CategoryName, 'Нет категории') AS CategoryName
+FROM Products P
+LEFT JOIN Categories C ON P.CategoryID = C.CategoryID
+
