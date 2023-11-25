@@ -52,5 +52,15 @@ namespace UnitTestShapes
             //assert
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void TestInCompileTime()
+        {
+            IShape[] shapes = {new Triangle(7, 24, 25), new Circle(2)};
+            for (int i = 0; i < 2; i++)
+            {
+                shapes[i].CalculateArea();
+            }
+        }
     }
 }
